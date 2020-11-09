@@ -276,3 +276,9 @@ curl -sS "https://api.convertkit.com/v3/subscribers?api_secret=SECRET_HERE" | py
 ```
 sed -e ':a' -e 'N' -e '$!ba' -e 's/\n//g' file_name
 ```
+
+## allow X410 connection from WSL2 in windows 10
+As administrator
+```
+New-NetFirewallRule -DisplayName "WSL" -Direction Inbound -InterfaceAlias "vEthernet (WSL)" -Action Allow
+```
