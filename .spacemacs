@@ -32,6 +32,7 @@ values."
    dotspacemacs-configuration-layers
    '(
      go
+     (scala :variables scala-backend 'scala-metals)
      python
      yaml
      ;; ----------------------------------------------------------------
